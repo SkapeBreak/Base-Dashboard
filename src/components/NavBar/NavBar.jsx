@@ -19,9 +19,9 @@ export default function NavBar() {
 				<div className={`${extended ? 'bigSection' : 'smallSection'}`}>
 					{extended ? (
 						<ul>
-							<li>Account</li>
-							<li>Account</li>
-							<li>Account</li>
+							<li>one</li>
+							<li>Two</li>
+							<li>Three</li>
 						</ul>
 					) : (
 						<>
@@ -42,9 +42,9 @@ export default function NavBar() {
 				<div className={`${extended ? 'bigSection' : 'smallSection'}`}>
 					{extended ? (
 						<ul>
-							<li>Account</li>
-							<li>Account</li>
-							<li>Account</li>
+							<li>4</li>
+							<li>5</li>
+							<li>6</li>
 						</ul>
 					) : (
 						<>
