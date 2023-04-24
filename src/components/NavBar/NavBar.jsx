@@ -1,12 +1,11 @@
-import React, { useState } from 'react';
+import React, { useState, useContext } from 'react';
 import './navbar.css';
 import images from '../../constants/images';
+import { appContext } from '../../context/AppContextProvider';
 
 export default function NavBar() {
-	const [extended, setExtended] = useState(false);
-	const toggleNav = () => {
-		setExtended(!extended);
-	};
+	const { extended, toggleNav } = useContext(appContext);
+
 	return (
 		<nav className={`navbar ${extended ? 'big' : 'small'}`}>
 			<div className='navHeader'>
